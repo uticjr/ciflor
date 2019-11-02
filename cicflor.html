@@ -12,6 +12,8 @@
     body {
       padding: 2px;
       background-color: #228b22;
+      min-height: 75rem;
+      padding-top: 5rem;
     }
 
     nav {
@@ -37,123 +39,145 @@
 </head>
 
 <body>
-  <div class="contanier">
-    <header>
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="assets/cicflor.jpeg" alt="logo" class="rounded img-fluid">
-        </div>
-        <div class="col-sm-6">
-          <nav>
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contatos">Contatos</a>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main>
 
-      <section id="inicio">
-        <h1 style="background-color: #008000">
-          CIFLOR
-        </h1>
-        <div class="row">
-          <div class="col-sm-12">
-            <img src="assets/inicio.png" alt="" class="rounded img-fluid">
+  <header>
+    <div class="row">
+      <div class="col-md-12 col-sm-6">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top"
+          style="background-color: #fff; border-radius: 0px 0px 7px 7px;">
+          <a class="navbar-brand" href="#">
+            <img src="assets/cicflor.jpeg" width="175" height="50" alt="logo" class="rounded">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav bd-navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Início <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contatos">Contatos</a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
-      <hr>
-      <section id="sobre">
-        <div class="row">
-          <div class="col-sm-12">
-            <h3>
-              Sobre
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <article style="background-color: #454545" class="rounded">
-              <p style="color: #fff; margin: 5px;">
-                O evento pretende servir como ponte entre a comunidade de profissionais em formação e o mercado de
-                trabalho, visando expandir o potencial de cooperação entre a universidade e as entidades empregadoras e
-                assim, possibilitar a inserção de graduandos e egressos no mercado de trabalho. Na ocasião, pretende-se
-                criar um banco de dados destes profissionais, a partir do cadastro de currículos, de forma os mesmos
-                possam ter acesso às oportunidades de emprego e estágio em um site que será criado para esta finalidade.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <hr color="transparent">
-      <section id="contatos">
-        <h3 style="text-align: center">
-          Contatos
-        </h3>
-        <div class="row">
-          <div class="col-sm-12" style="align-items: center;">
-            <img src="assets/cicflor.jpeg" alt="empresaA" class="rounded img-fluid">
-            <h4 style="text-align: center">Empresa A</h4>
-            <div style="text-align: center">
-              <a href="mailto:romulo.gabss@gmail.com?subject=Vaga%20Estágio" style="text-align: center">
-                <button style="text-align: center" class="btn btn-primary" type="submit">Mandar currículo</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <hr>
-    <footer>
-      <div class="row">
-        <div class="col-sm-2">
-          <nav style="list-style: none">
-            <li>
-              <a href="#inicio">Início</a>
-            </li>
-            <li>
-              <a href="#sobre">Sobre</a>
-            </li>
-            <li>
-              <a href="#contatos">Contatos</a>
-            </li>
-          </nav>
-        </div>
-        <div class="col-sm-5">
-          <form>
-            <div class="form-group" style="text-align: center">
-              <h5>Entre em contato:</h5>
-              <input type="email" class="form-control" id="emailContato" aria-describedby="emailHelp"
-                placeholder="Digite seu email">
-              <a href="">
-                <button class="btn btn-primary">
-                  Enviar
-                </button>
-              </a>
-            </div>
-          </form>
-        </div>
-        <div style="overflow:hidden;width: 700px;position: relative;"><iframe width="700" height="440"
-            src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%20Avenida%20Presidente%20Tancredo%20Neves%2C%202501%20-%20Terra%20Firme%2CBel%C3%A9m%20-%20PA%2C66077-830%20-%20Terra%20Firme%2C%20Bel%C3%A9m%20-%20PA%2C%2066077-830+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          <div
-            style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
-            <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a
-                href="embedgooglemaps.com/pt/">https://embedgooglemaps.com/pt/</a> & <a
-                href="https://rechargevodafone.co.uk">https://rechargevodafone.co.uk/vodafone-pay-as-you-go/</a></small>
-          </div>
-          <style>
-            #gmap_canvas img {
-              max-width: none !important;
-              background: none !important
-            }
-          </style>
-        </div><br />
+        </nav>
       </div>
-    </footer>
-  </div>
+    </div>
+  </header>
+  <main class="container-fluid" role="main">
+    <section id="inicio">
+      <h1 style="background-color: #008000">
+        CIFLOR
+      </h1>
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="assets/inicio.png" alt="" class="rounded img-fluid">
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="sobre">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>
+            Sobre
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <article style="background-color: #454545" class="rounded">
+            <p style="color: #fff; margin: 5px;">
+              O evento pretende servir como ponte entre a comunidade de profissionais em formação e o mercado de
+              trabalho, visando expandir o potencial de cooperação entre a universidade e as entidades empregadoras e
+              assim, possibilitar a inserção de graduandos e egressos no mercado de trabalho. Na ocasião, pretende-se
+              criar um banco de dados destes profissionais, a partir do cadastro de currículos, de forma os mesmos
+              possam ter acesso às oportunidades de emprego e estágio em um site que será criado para esta finalidade.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <hr color="transparent">
+    <section id="contatos">
+      <h3 style="text-align: center">
+        Contatos
+      </h3>
+      <div class="row">
+        <div class="col-sm-12" style="align-items: center;">
+          <img src="assets/cicflor.jpeg" alt="empresaA" class="rounded img-fluid">
+          <h4 style="text-align: center">Empresa A</h4>
+          <div style="text-align: center">
+            <a href="mailto:romulo.gabss@gmail.com?subject=Vaga%20Estágio" style="text-align: center">
+              <button style="text-align: center" class="btn btn-primary" type="submit">Mandar currículo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <div class="row">
+      <div class="col-sm-2">
+        <nav style="list-style: none">
+          <li>
+            <a href="#inicio">Início</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#contatos">Contatos</a>
+          </li>
+        </nav>
+      </div>
+      <div class="col-sm-5">
+        <form>
+          <div class="form-group" style="text-align: center">
+            <h5>Entre em contato:</h5>
+            <input type="email" class="form-control" id="emailContato" aria-describedby="emailHelp"
+              placeholder="Digite seu email">
+            <a href="">
+              <button class="btn btn-primary">
+                Enviar
+              </button>
+            </a>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-5" style="overflow:hidden;width: 700px;position: relative;">
+        <iframe width="100%" height="50%"
+          src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%20Avenida%20Presidente%20Tancredo%20Neves%2C%202501%20-%20Terra%20Firme%2CBel%C3%A9m%20-%20PA%2C66077-830%20-%20Terra%20Firme%2C%20Bel%C3%A9m%20-%20PA%2C%2066077-830+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+        <div
+          style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+        </div>
+        <style>
+          #gmap_canvas img {
+            max-width: none !important;
+            background: none !important
+          }
+        </style>
+      </div><br />
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
