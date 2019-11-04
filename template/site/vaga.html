@@ -1,0 +1,10 @@
+{% block vaga %}
+<div class="card" style="width: 18rem;">
+	<img class="card-img-top" src="{{ vaga.foto }}" alt="Imagem de capa do card">
+	<div class="card-body">
+		<h5 class="card-title">{{ vaga.empresa.nome }}</h5>
+		<p class="card-text">{{ vaga.descricao }}</p>
+		<a href="#" class="btn btn-primary">Enviar Currículo</a>
+	</div>
+</div>
+{% endblock %}

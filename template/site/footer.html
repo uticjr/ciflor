@@ -1,0 +1,49 @@
+{% block footer %}
+	<footer>
+		<div class="row">
+			<div class="col-sm-2">
+				<nav style="list-style: none">
+					<li>
+						<a href="#inicio">Início</a>
+					</li>
+					<li>
+						<a href="#sobre">Sobre</a>
+					</li>
+					<li>
+						<a href="#contatos">Contatos</a>
+					</li>
+				</nav>
+			</div>
+			<div class="col-sm-5">
+				<form>
+					<div class="form-group" style="text-align: center">
+						<h5>Entre em contato:</h5>
+						<input type="email" class="form-control" id="emailContato" aria-describedby="emailHelp"
+						       placeholder="Digite seu email">
+						<a href="">
+							<button class="btn btn-primary" style="margin: 5px;">
+								Enviar
+							</button>
+						</a>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-5" style="overflow:hidden;width: 700px;position: relative;">
+				<iframe width="100%" height="50%"
+				        src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%20Avenida%20Presidente%20Tancredo%20Neves%2C%202501%20-%20Terra%20Firme%2CBel%C3%A9m%20-%20PA%2C66077-830%20-%20Terra%20Firme%2C%20Bel%C3%A9m%20-%20PA%2C%2066077-830+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+				        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+				</iframe>
+				<div
+						style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+				</div>
+				<style>
+					#gmap_canvas img {
+						max-width: none !important;
+						background: none !important
+					}
+				</style>
+			</div>
+			<br/>
+		</div>
+	</footer>
+{% endblock %}
