@@ -1,11 +1,12 @@
+{% load staticfiles %}
 {% block inicio %}
 	<section id="inicio">
 		<h1 style="background-color: #008000">
 			CIFLOR
 		</h1>
 		<div class="row">
-			<div class="col-sm-12">
-				<img src="assets/inicio.png" alt="" class="rounded img-fluid">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<img src="{% static 'inicio.png' %}" alt="desmonstração" class="rounded img-fluid align-self-center">
 			</div>
 		</div>
 	</section>

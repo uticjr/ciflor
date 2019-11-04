@@ -1,8 +1,9 @@
 from django.shortcuts import render
+from .models import Vaga
 
 
 # Create your views here.
 def home(request):
-    return render(request, 'site/base.html')
-
-
+    data = {}
+    data['vagas'] = Vaga.objects.all()
+    return render(request, 'site/base.html', data)

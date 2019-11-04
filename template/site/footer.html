@@ -1,8 +1,12 @@
+{% load static %}
 {% block footer %}
-	<footer>
+	<footer style="background-color: #19865C; padding-top: 15px;" class="justify-content-around">
 		<div class="row">
-			<div class="col-sm-2">
-				<nav style="list-style: none">
+			<div class="col-lg-2">
+				<img src="{% static 'ciflor.jpeg' %}" width="175" height="50" alt="logo" style="margin-left: 2px">
+			</div>
+			<div class="col-lg-2 col-sm-2 justify-content-start">
+				<nav style="list-style: none; text-align: justify">
 					<li>
 						<a href="#inicio">Início</a>
 					</li>
@@ -14,10 +18,10 @@
 					</li>
 				</nav>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-lg-4 col-sm-5">
 				<form>
 					<div class="form-group" style="text-align: center">
-						<h5>Entre em contato:</h5>
+						<label for="emailContato">Entre em contato:</label>
 						<input type="email" class="form-control" id="emailContato" aria-describedby="emailHelp"
 						       placeholder="Digite seu email">
 						<a href="">
@@ -28,8 +32,8 @@
 					</div>
 				</form>
 			</div>
-			<div class="col-sm-5" style="overflow:hidden;width: 700px;position: relative;">
-				<iframe width="100%" height="50%"
+			<div class="col-lg-4 col-sm-5 arounded" style="overflow:hidden;width: 700px;position: relative;">
+				<iframe width="100%" height="75%"
 				        src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%20Avenida%20Presidente%20Tancredo%20Neves%2C%202501%20-%20Terra%20Firme%2CBel%C3%A9m%20-%20PA%2C66077-830%20-%20Terra%20Firme%2C%20Bel%C3%A9m%20-%20PA%2C%2066077-830+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
 				        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 				</iframe>

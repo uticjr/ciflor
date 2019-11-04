@@ -1,10 +1,13 @@
+{% load staticfiles %}
 {% block vaga %}
-<div class="card" style="width: 18rem;">
-	<img class="card-img-top" src="{{ vaga.foto }}" alt="Imagem de capa do card">
-	<div class="card-body">
-		<h5 class="card-title">{{ vaga.empresa.nome }}</h5>
-		<p class="card-text">{{ vaga.descricao }}</p>
-		<a href="#" class="btn btn-primary">Enviar Currículo</a>
-	</div>
-</div>
+	{% for vaga in vagas %}
+		<div class="card" style="width: 18rem; height: 22.5rem; margin: 10px">
+			<div class="card-body">
+			<img class="card-img-top" src="{% static vaga.foto|striptags %}" alt="Imagem de capa do card" style="margin: 5px; border-radius: 5px">
+				<h5 class="card-title" style="text-align: center">{{ vaga.empresa.nome }}</h5>
+				<p class="card-text" style="text-align: left">{{ vaga.descricao }}</p>
+				<a href="#" class="btn btn-primary">Enviar Currículo</a>
+			</div>
+		</div>
+	{% endfor %}
 {% endblock %}

@@ -1,10 +1,11 @@
+{% load staticfiles %}
 {% block menu %}
 	<header class="row">
 		<div class="col-md-12 col-sm-6">
 			<nav class="navbar navbar-expand-md navbar-light fixed-top"
 			     style="background-color: #fff; border-radius: 0px 0px 7px 7px;">
 				<a class="navbar-brand" href="#">
-					<img src="assets/ciflor.jpeg" width="175" height="50" alt="logo" class="rounded">
+					<img src="{% static 'ciflor.jpeg' %}" width="175" height="50" alt="logo" class="rounded">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 				        data-target="#navbarSupportedContent"
