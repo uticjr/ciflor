@@ -19,3 +19,11 @@ class Vaga(models.Model):
     def __str__(self):
         return self.empresa.nome
 
+
+class Canditato(models.Model):
+    nome = models.CharField(max_length=150)
+    emial = models.EmailField()
+    curriculo = models.FileField()
+
+    def __str__(self):
+        return self.nome

@@ -9,6 +9,15 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<title>Página inicial - Ciflor</title>
+	<script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".create-book").modalForm({
+                formURL: "{% url 'curriculo' %}"
+            });
+
+        });
+	</script>
 	<style>
 		body {
 			background-color: #228b22;
@@ -39,7 +48,17 @@
 		header {
 			padding-bottom: 5rem;
 		}
+
+		.modal-body input {
+			width: 60%;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
 	</style>
+
 </head>
 <body>
 {% block menu %}
@@ -66,6 +85,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="{% static  'js/jquery.bootstrap.modal.forms.min.js' %}"></script>
 </body>
 
 </html>

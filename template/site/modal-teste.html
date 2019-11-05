@@ -1,0 +1,38 @@
+{% block modal %}
+	<div class="modal fade" tabindex="-1" role="dialog" id="modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form method="post" action="{% url 'enviar' %}">
+					{% csrf_token %}
+					<div class="modal-header">
+						<h5 class="modal-title">Envie Seu currículo</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="nome">Nome</label>
+							<input type="text" id="nome" value="{{ canditato.nome }}">
+						</div>
+						<div class="form-group">
+							<label for="email">E-mail</label>
+							<input type="email" id="email" value="{{ canditato.email }}">
+						</div>
+						<div class="form-group">
+							<label for="curriculo">Escolha seu currículo</label>
+							<input type="file" class="form-control-file" id="curriculo" value="{{ canditato.curriculo }}">
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="submit" class="submit-btn btn btn-primary">Enviar</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}
